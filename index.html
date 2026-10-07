@@ -3,35 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - DNAPlugin</title>
+    <title>Chính sách Quyền riêng tư - DNAPlugin</title>
+    <!-- Tích hợp Tailwind CSS qua CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
-        h1, h2 { color: #0F3823; }
-        p, li { font-size: 15px; }
+        /* Tùy chỉnh màu sắc thương hiệu */
+        :root {
+            --brand-green: #0F3823;
+            --brand-gold: #FACC15;
+            --brand-light-green: #14532D;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     </style>
 </head>
-<body>
-    <h1>CHÍNH SÁCH QUYỀN RIÊNG TƯ (PRIVACY POLICY)</h1>
-    <p><strong>Tên ứng dụng:</strong> DNAPlugin - Công cụ tiện ích kỹ thuật lâm nghiệp<br>
-    <strong>Tác giả:</strong> Đoàn Ngọc Ấn<br>
-    <strong>Ngày cập nhật:</strong> 07/10/2026</p>
-    
-    <h2>1. Thông tin ứng dụng thu thập và Mục đích sử dụng</h2>
-    <ul>
-        <li><strong>Quyền Vị trí (Location - Foreground & Background):</strong> Sử dụng định vị GPS để xác định vị trí, ghi nhận mốc tọa độ, đo đạc và vẽ tuyến tuần tra (Trekking).</li>
-        <li><strong>Quyền Máy ảnh (Camera):</strong> Sử dụng để chụp ảnh hiện trường kèm tọa độ GPS. Hình ảnh lưu cục bộ trên máy.</li>
-        <li><strong>Quyền Bộ nhớ (Storage):</strong> Cần thiết để đọc các tệp bản đồ ngoại tuyến (.tab, .shp, .mbtiles) và xuất dữ liệu.</li>
-        <li><strong>ID Thiết bị (Device ID):</strong> Dùng để xác thực bản quyền và kết nối đồng đội, không dùng để quảng cáo.</li>
-    </ul>
+<body class="bg-gray-50 text-gray-800">
 
-    <h2>2. Xử lý dữ liệu trên máy chủ (API)</h2>
-    <p>Khi sử dụng tính năng đọc tệp .TAB hoặc tải ảnh vệ tinh, dữ liệu tệp được gửi mã hóa (HTTPS) lên máy chủ xử lý của chúng tôi. Dữ liệu chỉ được xử lý tức thời và <strong>không bị lưu trữ lại</strong>.</p>
+    <!-- Header / Banner -->
+    <header class="bg-[#0F3823] text-white py-12 shadow-md">
+        <div class="max-w-4xl mx-auto px-6 flex items-center gap-6">
+            <!-- Icon/Logo -->
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center p-2 border-4 border-[#FACC15]">
+                <svg class="w-12 h-12 text-[#0F3823]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <div>
+                <h1 class="text-3xl font-extrabold tracking-tight text-[#FACC15]">CHÍNH SÁCH QUYỀN RIÊNG TƯ</h1>
+                <p class="mt-2 text-lg font-medium text-green-100">Ứng dụng DNAPlugin - Công cụ tiện ích kỹ thuật lâm nghiệp</p>
+                <p class="mt-1 text-sm text-green-200">Cập nhật lần cuối: 07/10/2026 | Tác giả: Đoàn Ngọc Ấn</p>
+            </div>
+        </div>
+    </header>
 
-    <h2>3. Cam kết chia sẻ dữ liệu</h2>
-    <p>Chúng tôi <strong>KHÔNG</strong> bán hoặc chia sẻ dữ liệu vị trí, hình ảnh khảo sát của bạn cho bên thứ ba. Mọi dữ liệu thuộc quyền kiểm soát của bạn.</p>
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-10">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 space-y-8">
+            
+            <!-- Section 1 -->
+            <section>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-[#14532D] text-white rounded-lg p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg></div>
+                    <h2 class="text-2xl font-bold text-[#0F3823]">1. Thu thập và Sử dụng Dữ liệu</h2>
+                </div>
+                <div class="space-y-4 pl-14 text-gray-600">
+                    <p>Ứng dụng thu thập các quyền sau để cung cấp chức năng lâm nghiệp cốt lõi:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong class="text-gray-800">Quyền Vị trí (Location):</strong> Sử dụng định vị GPS để xác định tọa độ, ghi nhận điểm mốc, đo đạc và vẽ tuyến tuần tra (Trekking).</li>
+                        <li><strong class="text-gray-800">Quyền Máy ảnh (Camera):</strong> Sử dụng để chụp ảnh hiện trường kèm tọa độ GPS. Hình ảnh chỉ lưu cục bộ trên máy.</li>
+                        <li><strong class="text-gray-800">Quyền Bộ nhớ (Storage):</strong> Đọc các tệp bản đồ ngoại tuyến (.tab, .shp, .mbtiles) và xuất dữ liệu do bạn chọn.</li>
+                        <li><strong class="text-gray-800">ID Thiết bị:</strong> Xác thực bản quyền công cụ, hoàn toàn không dùng để quảng cáo.</li>
+                    </ul>
+                </div>
+            </section>
 
-    <h2>4. Liên hệ</h2>
-    <p>Zalo: 085.652.1139<br>
-    Facebook: https://facebook.com/NgocAn.Digital</p>
+            <hr class="border-gray-200">
+
+            <!-- Section 2 -->
+            <section>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-[#14532D] text-white rounded-lg p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg></div>
+                    <h2 class="text-2xl font-bold text-[#0F3823]">2. Xử lý trên Máy chủ (API)</h2>
+                </div>
+                <p class="pl-14 text-gray-600">Khi sử dụng tính năng phân tích nâng cao (đọc tệp .TAB hoặc tải ảnh vệ tinh), dữ liệu được mã hóa và gửi đến máy chủ của chúng tôi. Dữ liệu này chỉ được <strong>xử lý tức thời trên RAM</strong> và không bị lưu trữ vĩnh viễn.</p>
+            </section>
+
+            <hr class="border-gray-200">
+
+            <!-- Section 3 -->
+            <section>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-[#14532D] text-white rounded-lg p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg></div>
+                    <h2 class="text-2xl font-bold text-[#0F3823]">3. Cam kết Bảo mật</h2>
+                </div>
+                <p class="pl-14 text-gray-600">Chúng tôi <strong>KHÔNG</strong> bán, trao đổi hoặc chia sẻ dữ liệu vị trí, bản đồ hay hình ảnh khảo sát của bạn cho bất kỳ bên thứ ba nào. Mọi dữ liệu phục vụ công tác tuần tra đều thuộc quyền kiểm soát tối cao của bạn.</p>
+            </section>
+
+            <hr class="border-gray-200">
+
+            <!-- Section 4 -->
+            <section>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-[#14532D] text-white rounded-lg p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>
+                    <h2 class="text-2xl font-bold text-[#0F3823]">4. Liên hệ Hỗ trợ</h2>
+                </div>
+                <div class="pl-14 text-gray-600 flex flex-col gap-2">
+                    <a href="https://zalo.me/0856521139" class="inline-flex items-center text-[#14532D] hover:underline font-semibold">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg> Zalo: 085.652.1139
+                    </a>
+                    <a href="https://facebook.com/NgocAn.Digital" class="inline-flex items-center text-blue-600 hover:underline font-semibold">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg> Facebook: Đoàn Ngọc Ấn
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center py-6 text-gray-500 text-sm">
+        &copy; 2026 DNAPlugin. Bảo lưu mọi quyền.
+    </footer>
 </body>
 </html>
